@@ -55,7 +55,7 @@ La base de datos fue diseñada para cumplir con las funciones requeridas para la
 
 ## 4. Diagrama Entidad - Relación
 
-![Diagrama Entidad-Relación](media/image1.png)
+![Diagrama Entidad-Relación](src/assets/diagrama.jpg)
 
 - Un usuario puede tener muchos gastos. Un gasto pertenece a un solo usuario.
 - Un usuario puede definir muchos presupuestos (uno por categoría/mes). Un presupuesto pertenece a un solo usuario.
