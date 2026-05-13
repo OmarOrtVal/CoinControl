@@ -4,8 +4,6 @@
 **Profesor:** Juan Rubén Treviño Tapia  
 **Asignatura:** Implementa aplicaciones móviles multiplataforma  
 
----
-
 ## Objetivo General
 
 Desarrollar una aplicación multiplataforma que permita registrar, categorizar y analizar sus gastos diarios, fomentando la conciencia financiera mediante una interfaz intuitiva y herramientas visuales de seguimiento presupuestario.
@@ -55,7 +53,7 @@ La base de datos fue diseñada para cumplir con las funciones requeridas para la
 - **Justificación:** Da soporte a la función de "establecer metas de ahorro". Los campos `nombre_meta`, `monto_objetivo`, `monto_actual` y `fecha_limite` permiten al usuario definir un objetivo, ir actualizando su progreso y visualizar si alcanzará la meta a tiempo.
 
 
-## 5. Diagrama Entidad - Relación
+## 4. Diagrama Entidad - Relación
 
 ![Diagrama Entidad-Relación](media/image1.png)
 
