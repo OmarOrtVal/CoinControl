@@ -1,34 +1,8 @@
 # CoinControl
 
-**12 de mayo del 2026**
-
 **Autores:** Omar Daniel Ortega Valtierra, Miguel Angel Roman Padilla  
 **Profesor:** Juan Rubén Treviño Tapia  
 **Asignatura:** Implementa aplicaciones móviles multiplataforma  
-
-**2026**
-
-## Índice
-
-- [CoinControl](#coincontrol)
-  - [Índice](#índice)
-  - [Objetivo General](#objetivo-general)
-  - [1. Descripción del problema](#1-descripción-del-problema)
-  - [2. Entidades](#2-entidades)
-  - [3. Justificación de elementos de la base de datos](#3-justificación-de-elementos-de-la-base-de-datos)
-    - [Tabla `usuarios`](#tabla-usuarios)
-    - [Tabla `categorias`](#tabla-categorias)
-    - [Tabla `gastos`](#tabla-gastos)
-    - [Tabla `presupuesto_mensual`](#tabla-presupuesto_mensual)
-    - [Tabla `metas_ahorro`](#tabla-metas_ahorro)
-  - [4. Script de la base de datos](#4-script-de-la-base-de-datos)
-  - [5. Diagrama Entidad - Relación](#5-diagrama-entidad---relación)
-- [Omar Daniel Ortega Valtierra](#omar-daniel-ortega-valtierra)
-  - [Numero de control: 23308060610674](#numero-de-control-23308060610674)
-- [Miguel Angel Roman Padilla](#miguel-angel-roman-padilla)
-  - [Numero de control: 23308060610314](#numero-de-control-23308060610314)
-  - [Especialidad: Programacion](#especialidad-programacion)
-  - [Grupo: 6D](#grupo-6d)
 
 ---
 
@@ -80,9 +54,6 @@ La base de datos fue diseñada para cumplir con las funciones requeridas para la
 
 - **Justificación:** Da soporte a la función de "establecer metas de ahorro". Los campos `nombre_meta`, `monto_objetivo`, `monto_actual` y `fecha_limite` permiten al usuario definir un objetivo, ir actualizando su progreso y visualizar si alcanzará la meta a tiempo.
 
-## 4. Script de la base de datos
-
-*(El script SQL se encuentra en el documento original)*
 
 ## 5. Diagrama Entidad - Relación
 
