@@ -66,8 +66,12 @@ La base de datos fue diseñada para cumplir con las funciones requeridas para la
 # Omar Daniel Ortega Valtierra
 ## Numero de control: 23308060610674
 ## Correo electronico: 23308060610674@cetis61.edu.mx
+## foto:
+![foto omar](src/assets/ft_omar.jpeg)
 # Miguel Angel Roman Padilla 
 ## Numero de control: 23308060610314
 ## Correo electronico: 23308060610314@cetis61.edu.mx
+## foto:
+![foto angel](src/assets/ft_angel.jpeg)
 ## Especialidad: Programacion 
 ## Grupo: 6D
