@@ -3,9 +3,10 @@ from controllers.UsuariosController import UsuariosController
 from view.LoginView import LoginView
 from view.RegisterView import RegisterView  
 from view.PerfilView import UserView
+from view.DashboardView import DashboardView
 
 def start(page: ft.Page):
-    page.title = "Sistema SIGE"
+    page.title = "CoinControl"
     auth_ctrl = UsuariosController()
 
     def route_change(e):
@@ -14,6 +15,8 @@ def start(page: ft.Page):
             page.views.append(LoginView(page, auth_ctrl))
         elif page.route == "/register": 
             page.views.append(RegisterView(page, auth_ctrl))
+        elif page.route == "/dashboard":
+            page.views.append(DashboardView(page))
         elif page.route == "/perfil":
             page.views.append(UserView(page, auth_ctrl))
         
