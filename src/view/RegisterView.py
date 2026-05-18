@@ -19,7 +19,7 @@ def RegisterView(page: ft.Page, auth_controller):
     )
     
     telefono = ft.TextField(
-        label="Teléfono",
+        label="Telefono",
         prefix_icon=ft.Icons.PHONE,
         width=400,
         border_radius=10,
@@ -64,7 +64,7 @@ def RegisterView(page: ft.Page, auth_controller):
         page.update()
     
     def registrar_click(e):
-        if not nombre.value or not email.value or not telefono.value or not password.value or not confirm_password.value:
+        if not nombre.value or not apellido.value or not email.value or not telefono.value or not password.value or not confirm_password.value:
             mensaje.value = "Todos los campos son obligatorios"
             mensaje.color = "red"
             page.update()
@@ -139,8 +139,8 @@ def RegisterView(page: ft.Page, auth_controller):
         vertical_alignment=ft.MainAxisAlignment.CENTER,
         horizontal_alignment=ft.CrossAxisAlignment.CENTER,
         appbar=ft.AppBar(
-            title=ft.Text("SIGE - Registro"),
-            bgcolor=ft.Colors.BLACK,
+            title=ft.Text("CoinControl - Registro"),
+            bgcolor=ft.Colors.GREEN_700,
             color=ft.Colors.WHITE,
             leading=ft.IconButton(ft.Icons.ARROW_BACK, on_click=lambda _: page.go("/"))
         ),

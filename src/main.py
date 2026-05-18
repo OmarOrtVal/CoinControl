@@ -42,7 +42,7 @@ def start(page: ft.Page):
         page.go("/")
     
 def main():
-    ft.app(start)
+    ft.app(target=start)
 
 if __name__ == "__main__":
     main()

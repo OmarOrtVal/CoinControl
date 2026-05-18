@@ -40,7 +40,7 @@ def LoginView(page: ft.Page, auth_controller):
         user, msg = auth_controller.login(correo.value, contraseña.value)
         if user:
             page.user_data = user
-            mostrar_snackbar("¡Sesión iniciada correctamente!", ft.Colors.GREEN)
+            mostrar_snackbar("¡Sesion iniciada correctamente!", ft.Colors.GREEN)
             page.go("/dashboard")
         else:
             mensaje.value = msg
@@ -60,8 +60,13 @@ def LoginView(page: ft.Page, auth_controller):
     )
     
     btn_registro = ft.TextButton(
-        "¿No tienes cuenta? Regístrate",
+        "¿No tienes cuenta? Registrate",
         on_click=lambda _: page.go("/register")
+    )
+    
+    btn_recuperar = ft.TextButton(
+        "¿Olvidaste tu contraseña?",
+        on_click=lambda _: page.go("/forgot-password")
     )
     
     contraseña.on_submit = login_click
@@ -71,26 +76,28 @@ def LoginView(page: ft.Page, auth_controller):
         vertical_alignment=ft.MainAxisAlignment.CENTER,
         horizontal_alignment=ft.CrossAxisAlignment.CENTER,
         appbar=ft.AppBar(
-            title=ft.Text("SIGE - Login"),
-            bgcolor=ft.Colors.BLACK,
+            title=ft.Text("CoinControl - Login"),
+            bgcolor=ft.Colors.GREEN_700,
             color=ft.Colors.WHITE
         ),
         controls=[
             ft.Column(
                 [
-                    ft.Text("Acceso al Sistema", size=24, weight="bold"),
-                    ft.Container(height=10),
+                    ft.Text("CoinControl", size=32, weight="bold", color=ft.Colors.GREEN_700),
+                    ft.Text("Control de Finanzas Personales", size=14, color=ft.Colors.GREY_600),
+                    ft.Container(height=20),
                     correo,
                     ft.Container(height=10),
                     contraseña,
-                    ft.Container(height=10),
+                    ft.Container(height=5),
                     mensaje,
                     ft.Container(height=10),
                     ft.Row(
                         [iniciar_sesion],
                         alignment=ft.MainAxisAlignment.CENTER
                     ),
-                    ft.Container(height=10),
+                    ft.Container(height=5),
+                    btn_recuperar,
                     btn_registro
                 ],
                 horizontal_alignment=ft.CrossAxisAlignment.CENTER,

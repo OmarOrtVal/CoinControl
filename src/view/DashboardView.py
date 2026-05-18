@@ -33,17 +33,28 @@ def DashboardView(page: ft.Page):
         route="/dashboard",
         controls=[
             ft.AppBar(
-                title=ft.Text("Dashboard"),
+                title=ft.Text(f"Dashboard - {user.get('nombre', 'Usuario') if user else 'Usuario'}"),
+                bgcolor=ft.Colors.GREEN_700,
                 actions=[
                     ft.IconButton(
                         icon=ft.Icons.PERSON,
+                        tooltip="Perfil",
                         on_click=mostrar_perfil
                     ),
                     ft.IconButton(
                         icon=ft.Icons.LOGOUT,
+                        tooltip="Cerrar Sesion",
                         on_click=cerrar_sesion
                     ),
                 ],
+            ),
+            ft.Container(
+                content=ft.Column([
+                    ft.Text(f"Bienvenido, {user.get('nombre', 'Usuario') if user else 'Usuario'}!"),
+                    ft.Text("CoinControl - Controla tus finanzas personales"),
+                ]),
+                padding=20,
+                expand=True,
             ),
         ]
     )
